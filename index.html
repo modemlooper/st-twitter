@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+        <title>Stencil Twitter Component</title>
+
+        <style>
+            body {
+                font-family: helvetica;
+            }
+            .content {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+            header {
+                text-align: center;
+            }
+            .section {
+                padding: 20px;
+                margin: 20px 0;
+                background: #efefef;
+            }
+            .code {
+                padding: 10px 0 20px 0;
+            }
+            st-twitter[type="list"] div,
+            st-twitter[type="timeline"] div {
+                width: 60%;
+                height: 400px;
+                overflow: scroll;
+            }
+        </style>
+
+        <script src="/build/sttwitter.js"></script>
+
+    </head>
+    <body>
+        <div class="content">
+
+            <header>
+                <h2>Examples of using this web component.</h2>
+            </header>
+
+            <div class="section">
+                <h3>Follow Button</h3>
+                <div class="code">
+                    &lt;st-twitter type="follow" user="stenciljs"&gt;&lt;/st-twitter&gt;
+                </div>
+                <st-twitter type="follow" user="stenciljs"></st-twitter>
+            </div>
+
+            <div class="section">
+                <h3>Hashtag Tweet</h3>
+                <div class="code">
+                    &lt;st-twitter type="hashtag" hashtag="stenciljs" text="this is the text of the tweet"&gt;&lt;/st-twitter&gt;
+                </div>
+                <st-twitter type="hashtag" hashtag="stenciljs" text="this is the text of the tweet"></st-twitter>
+            </div>
+
+            <div class="section">
+                <h3>User Timeline</h3>
+                <div class="code">
+                    &lt;st-twitter type="timeline" user="stenciljs"&gt;&lt;/st-twitter&gt;
+                </div>
+                <st-twitter type="timeline" user="stenciljs"></st-twitter>
+            </div>
+
+            <div class="section">
+                <h3>User List</h3>
+                <div class="code">
+                    &lt;st-twitter type="list" user="TwitterDev" list="national-parks"&gt;&lt;/st-twitter&gt;
+                </div>
+                <st-twitter type="list" user="TwitterDev" list="national-parks"></st-twitter>
+            </div>
+        </div>
+    </body>
+</html>
