@@ -8,6 +8,10 @@ Easy Twitter buttons and timelines via a web component.
 
     npm i st-twitter
 
+## Follow Button
+
+    <st-twitter type="follow" user="stenciljs"></st-twitter>
+
 ## Hashtag Tweet
 
     <st-twitter type="hashtag" hashtag="stenciljs" text="this is the text of the tweet"></st-twitter>
